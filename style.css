@@ -411,7 +411,7 @@ flex-direction: column;
 }
 .project img{
   margin: 25px;
-  height: 400px;
+  height: 300px;
   width: 90%;
   border: 5px solid var(--impText);
   border-radius: 25px 25px;
