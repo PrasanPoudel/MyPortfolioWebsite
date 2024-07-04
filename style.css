@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -7,14 +7,14 @@
   scroll-behavior: smooth;
   color: var(--textColor);
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
 }
 :root{
   font-size: var(--fontSize);
   --fontSize:10px;
   --backgroundColor:#fff;
-  --primaryColor:#13bbff;
+  --primaryColor:#000;
   --textColor:rgba(100, 100, 100, 1);
   --impText:#000;
 }
@@ -23,7 +23,7 @@
   width: 100%;
 }
 .highlitedText{
-  font-weight: 750;
+  font-weight: 600;
 }
 body{
   background-color: var(--backgroundColor);
@@ -38,19 +38,6 @@ margin-top: 50px;
 overflow: hidden !important;
 }
 /* header */
-.top{
-  background: var(--primaryColor);
-  height: 25px;
-  width: 100%;
-  position: relative;
-}
-.top_whiteLine{
-  background-color: #fff;
-  height: 5px;
-  width: 100%;
-  position: absolute;
-  bottom: 5px;
-}
 header{
   display: flex;
   flex-direction: row;
@@ -61,9 +48,9 @@ header{
   top: 0;
   z-index: 15 !important;
   background-color: var(--backgroundColor);
-  box-shadow: -1px 1px 0px 10px var(--primaryColor);
-  -webkit-box-shadow: -1px 1px 0px 10px var(--primaryColor);
-  -moz-box-shadow: -1px 1px 0px 10px var(--primaryColor);
+  box-shadow: -1px 1px 0px 1px var(--primaryColor);
+  -webkit-box-shadow: -1px 1px 0px 1px var(--primaryColor);
+  -moz-box-shadow: -1px 1px 0px 1px var(--primaryColor);
 }
 .navLinks ul{
   display: flex;
@@ -71,9 +58,10 @@ header{
 }
 .navLinks ul li a{
   color: var(--impText);
-  font-size: 2rem;
+  font-size: 2.5rem;
   position: relative;
   cursor: pointer;
+  font-weight: 600;
   }
   .navLinks a::before{
     content: "";
@@ -106,10 +94,11 @@ header{
   .navLinks{
     padding: auto;
     display: flex;
-    background-color: var(--primaryColor);
+    background-color: var(--backgroundColor);
     position: absolute;
     top: 150px;
     width: 80%;
+    border: 1px solid var(--impText);
     height: 75vh;
     text-align: center;
     justify-content: center;
@@ -124,7 +113,7 @@ header{
       flex-direction: column;
     }
     .navLinks ul li a{
-      color: #fff;
+      color: var(--impText);
       font-size: 3.3rem;
       border-left: none;
     }
@@ -232,35 +221,20 @@ height: 90vh;
   color: var(--impText);
 }
 .transparentText{
-  font-size: 5rem;
+  font-size: 4rem;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
   color: var(--textColor);
 }
 .primaryColor{
   color: var(--primaryColor);
-  font-size: 5rem;
+  font-size: 4rem;
 }
 .explanation{ 
   font-size: 2rem;
   text-align: justify;
   margin-top: 25px;
   text-align-last: left;
-}
-.downloadCV{
-  background: var(--primaryColor);
-  border: none;
-  border-radius:25px;
-  text-align: center;
-  padding: 10px;
-  text-align: center;
-  width: 200px;
-  margin-top: 25px;
-}
-.downloadCV a{
-  font-size: 2.5rem;
-  color: #fff;
-  text-decoration: none;
 }
 @media screen and (max-width:1200px) {
   .about{
@@ -290,15 +264,14 @@ height: 90vh;
   align-items: center;
   justify-content: center;
   gap: 50px;
-  flex-wrap: wrap;
   padding-bottom: 50px;
   padding-left: 25px;
 
 }
 .clientTestimonial{
   display: flex;
-  width: 400px;
-  box-shadow: 2.5px 2.5px 2.5px 2.5px rgba(100, 100, 100, 1);
+  width: 500px;
+  box-shadow: 2.5px 2.5px 2.5px 1px rgba(100, 100, 100, 1);
   border-radius:25px;
 }
 .clientImg{
@@ -350,6 +323,9 @@ height: 90vh;
   }
   .clientName{
     font-size: 1.5rem;
+  }
+  .clientTestimonials{
+    flex-direction: column;
   }
   .clientTestimonial{
     width: 250px;
@@ -410,9 +386,10 @@ flex-direction: column;
   2.5px 2.5px 5px var(--textColor);
 }
 .project img{
-  margin: 25px;
-  height: 300px;
-  width: 90%;
+  margin: 25px 0;
+  padding: 50px;
+  height: 350px;
+  width: 70%; 
   border: 5px solid var(--impText);
   border-radius: 25px 25px;
 }
@@ -451,32 +428,6 @@ flex-direction: column;
 .project .projectLinks button:hover{
   filter: invert(100%);
 }
-.loadAllProjects{
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  color: var(--impText);
-  margin-top: 35px;
-  padding: 10px;
-  }
-  .loadAllProjects a, .loadAllProjects a i{
-    color: var(--impText);
-    font-weight: 600;
-    font-size: 3.3rem;
-    cursor: pointer;
-    position: relative;
-}
-.loadAllProjects a::before{
-  content: "";
-  position: absolute;
-  bottom: -2.5px;
-  height: 2.5px;
-  width: 0;
-  background: var(--impText);
-}
-.loadAllProjects a:hover::before{
-  animation: underline 0.5s linear;
-}
 @keyframes underline {
   from{
     width: 0;
@@ -492,6 +443,14 @@ flex-direction: column;
  .project .projectLinks{
   grid-template-columns: 1fr;
 }
+.project img{
+  margin: 25px 0;
+  padding: 5px;
+  height: 250px;
+  width: 70%; 
+  border: 5px solid var(--impText);
+  border-radius: 25px 25px;
+}
 }
 
 /* contact  section*/
@@ -505,107 +464,33 @@ flex-direction: column;
   font-size: 3.3rem;
   color: var(--primaryColor);
 }
-.formContainer{
-  width: 100%;
-  padding: 2.5%;
-  border-radius:25px;
-}
-form{
+.email{
   display: flex;
-  flex-direction: column;
-}
-.form-fields{
-  display: table;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
-.form-fields input,
-.form-fields textarea{
-  color: rgba(100, 100, 100, 1);
-  border: none;
-  outline:none;
-  background: none;
-  font-size: 2.1rem;
-  padding: 20px 10px 20px 10px;
-  width:100%;
-  font-weight: 900;
+.email a i{
+  color: var(--impText);
+  font-size: 5rem ;
 }
-.form-fields textarea{
-  height: 150px;
-  resize: none;
-}
-.form-group{
-  width: 45%;
-  float: left;
-  padding: 0px 30px;
-  margin: 15px 15px;
+.email a{
+  display: flex;
+  gap: 5px;
   border-radius: 25px;
-  border: 2.5px solid var(--impText);  
-  position: relative;
-}
-.placeholder{
-  display: none;
-  position: absolute;
-  font-size: 3rem;
-  font-weight: 900;
-}
-input::placeholder , textarea::placeholder{
+  border: 2.5px solid var(--impText);
+  padding: 25px;
   font-size: 2.5rem;
-  font-weight: 900;
-}
-.form-group input:focus::placeholder{
-  color: transparent;
-}
-.form-group textarea:focus::placeholder{
-  color: transparent;
-}
-
-.form-group input:focus + .placeholder{
-  top: -10px;
-  left: -1px;
+  align-items: center;
   color: var(--impText);
-  display: block;
-  background-color: var(--backgroundColor);
-}
-.form-group textarea:focus + .placeholder{
-  top: -10px;
-  left: -1px;
-  color: var(--impText);
-  display: block;
-  background-color: var(--backgroundColor);
-}
-.form-fields .form-group:last-child {
-  width: 92%;
-}
-.submitBtn{
-  width: 35%;
-  height: 75px;
-  border-radius: 30px;
-  font-size: 2.5rem;
-  outline: none;
-  border:none;
-  cursor: pointer;
-  color:#fff;
   text-align: center;
-  background: var(--primaryColor);
-  transition: 0.5s linear;
-  margin: 0 auto 0 auto;
-  font-weight: 900;
 }
-@media screen and (max-width: 1200px) {
-  .contact{
-    height: inherit;
-    float: none;  
-  }
-  .form-group{
-    width: 100%;
-    margin: 25px 0px;
-  }
-  .form-fields .form-group:last-child, 
-  .submitBtn{
-    width: 100%;
+@media screen and (width<1200px){
+  .email a {
+    padding: 25px 5px;
+    font-size: 2rem;
   }
 }
-
 /* footer section */
 footer{
   margin-top: 50px;
@@ -666,7 +551,7 @@ footer ul li a i:hover{
 .darkMode{
   --backgroundColor:#000;
   --impText:#fff;
-  --primaryColor: #13bbff;
+  --primaryColor: #fff;
   --textColor: rgba(100, 100, 100, 1);
 }
 #darkModeBtn{
