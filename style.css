@@ -22,6 +22,12 @@
   display: none;
   width: 100%;
 }
+img{
+  filter: grayscale(100%);
+  }
+  img:hover{
+    filter: grayscale(0%);
+  }
 .highlitedText{
   font-weight: 600;
 }
@@ -393,6 +399,7 @@ flex-direction: column;
   border: 5px solid var(--impText);
   border-radius: 25px 25px;
 }
+
 .projectName{
   display: flex;
   font-size: 3.3rem;
