@@ -25,10 +25,7 @@
 img{
   filter: grayscale(100%);
   }
-  img:hover{
-    filter: grayscale(0%);
-  }
-.highlitedText{
+.highlightedText{
   font-weight: 600;
 }
 body{
@@ -67,7 +64,7 @@ header{
   font-size: 2.5rem;
   position: relative;
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 500;
   }
   .navLinks a::before{
     content: "";
@@ -176,9 +173,6 @@ height: 90vh;
   height: 100%;
   width: 100%;
   filter: grayscale(100%);
-}
-.heroImg:hover{
-  filter: grayscale(0);
 }
 @media screen and (max-width:1200px){
   .hero{
@@ -297,7 +291,7 @@ height: 90vh;
 }
 .quote i{
   font-size: 5rem;
-  color: rgba(254, 109, 52, 1);
+  color: #000;
 }
 .comment , .client{
   padding: 10px;
@@ -380,59 +374,47 @@ flex-direction: column;
     align-content: center;
     justify-content: center;
     margin-top: 25px;
-}
-.project{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 25px 25px;
-  border: 5px solid var(--impText);
-  box-shadow: -2.5px -2.5px 5px var(--textColor),
-  2.5px 2.5px 5px var(--textColor);
-}
-.project img{
-  margin: 25px 0;
-  padding: 50px;
-  height: 350px;
-  width: 70%; 
-  border: 5px solid var(--impText);
-  border-radius: 25px 25px;
-}
-
-.projectName{
-  display: flex;
-  font-size: 3.3rem;
-  color: var(--impText);
-  font-weight: 600;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-}
-.project .projectLinks{
-  padding: 25px 25px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 25px;
-  align-content: center;
-  justify-content: center;
-  width: 100%;
-}
-.project .projectLinks button{
-  background-color: var(--backgroundColor);
-  padding: 25px;
-  width: 100%;
-  border: 2.5px solid var(--impText);
-  border-radius: 25px 25px;
-  cursor: pointer;
+    padding-bottom: 10px;
   }
-  .project .projectLinks button a,
-  .project .projectLinks button a i{
-    font-size: 3rem;
-    font-weight: 600;
+  .project{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 25px 25px;
+    border: 2.5px solid var(--impText);
+    box-shadow: -2.5px -2.5px 5px var(--textColor),
+    2.5px 2.5px 5px var(--textColor);
+    overflow: hidden;
+    height: 100px;
+  }
+  .projectName{
+    padding: 0 10px;
+    font-size: 2.5rem;
     color: var(--impText);
   }
-.project .projectLinks button:hover{
+  .project .projectLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    border-left: 1px solid var(--impText);
+  }
+  .project .projectLink button{
+    height: 100px;
+    background-color: var(--backgroundColor);
+    padding: 20px;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+  }
+  .project .projectLink button a,
+  .project .projectLink button a i{
+    font-size: 2.5rem;
+    color: var(--impText);
+  }
+.project .projectLink button:hover{
   filter: invert(100%);
 }
 @keyframes underline {
@@ -447,56 +429,6 @@ flex-direction: column;
  .allProjects{
   grid-template-columns: 1fr;
  }
- .project .projectLinks{
-  grid-template-columns: 1fr;
-}
-.project img{
-  margin: 25px 0;
-  padding: 5px;
-  height: 250px;
-  width: 70%; 
-  border: 5px solid var(--impText);
-  border-radius: 25px 25px;
-}
-}
-
-/* contact  section*/
-.contact{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width:100%;
-}
-.contactTitle{
-  font-size: 3.3rem;
-  color: var(--primaryColor);
-}
-.email{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-.email a i{
-  color: var(--impText);
-  font-size: 5rem ;
-}
-.email a{
-  display: flex;
-  gap: 5px;
-  border-radius: 25px;
-  border: 2.5px solid var(--impText);
-  padding: 25px;
-  font-size: 2.5rem;
-  align-items: center;
-  color: var(--impText);
-  text-align: center;
-}
-@media screen and (width<1200px){
-  .email a {
-    padding: 25px 5px;
-    font-size: 2rem;
-  }
 }
 /* footer section */
 footer{
