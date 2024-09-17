@@ -55,7 +55,7 @@ window.onscroll = () => {
   menu.classList.replace("bx-x-circle","bx-menu-alt-right" );
 }
 const dynamicText = document.querySelector(".typewriter");
-const words = ["Frontend Developer","React Js Developer" , "Web Developer"];
+const words = ["MERN Stack Developer","Web Developer" , "A Daily Learner"];
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
