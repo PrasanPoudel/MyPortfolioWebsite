@@ -401,20 +401,25 @@ flex-direction: column;
     outline: none;
     border-left: 1px solid var(--impText);
   }
-  .project .projectLink button{
+  .project .projectLink a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
     height: 100px;
     background-color: var(--backgroundColor);
     padding: 20px;
     width: 100%;
     cursor: pointer;
     border: none;
-  }
-  .project .projectLink button a,
-  .project .projectLink button a i{
     font-size: 2.5rem;
     color: var(--impText);
   }
-.project .projectLink button:hover{
+  .project .projectLink a i{
+    color: var(--impText);
+    font-size: 2.5rem;
+  }
+.project .projectLink a:hover{
   filter: invert(100%);
 }
 @keyframes underline {

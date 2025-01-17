@@ -1,215 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prasan Poudel Portfolio.</title>
-  <link rel="stylesheet" href="./style.css">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="icon" href="./images/icon.png">
-</head>
-<body>
-  <div class="preLoaderContainer">
-    <div class="lds-facebook"><div></div><div></div><div></div></div>
-</div>
-  <header>
-    <h1 class="primaryColor">Portfolio</h1>
-    <div class="navLinks">
-      <ul> 
-      <li><a href="#hero">Home</a></li>
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#projects">Projects</a></li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prasan Poudel Portfolio.</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="icon" href="./images/icon.png" />
+  </head>
+  <body>
+    <div class="preLoaderContainer">
+      <div class="lds-facebook">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <header>
+      <h1 class="primaryColor">Portfolio</h1>
+      <div class="navLinks">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+      </div>
+      <button
+        id="darkModeBtn"
+        class="bx bx-moon"
+        onclick="darkModeToggle()"
+      ></button>
+      <div id="menuBtn" class="bx bx-menu-alt-right"></div>
+    </header>
+    <section class="hero" id="hero">
+      <div class="heroText" data-aos="fade-up">
+        <p class="greet"><img src="./images/hello.png" alt="" />, I'm</p>
+        <h1 class="primaryColor highlightedText">
+          Prasan
+          <span class="transparentText highlightedText"> Poudel</span>
+        </h1>
+        <p class="typewriter"></p>
+        <div class="mySocials">
+          <ul>
+            <li>
+              <a href="https://facebook.com/prasan.poudel.77" target="_blank"
+                ><i class="bx bxl-facebook-circle"></i
+              ></a>
+              <a href="#"><i class="bx bxl-linkedin-square"></i></a>
+              <a href="mailto:prasanpoudel501.gmail.com" target="_blank"
+                ><i class="bx bxl-gmail"></i
+              ></a>
+              <a href="https://github.com/PrasanPoudel" target="_blank"
+                ><i class="bx bxl-github"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="heroImg"></div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-Box1">
+        <img src="./images/icon.png" alt="" />
+      </div>
+      <div class="about-Box2" data-aos="fade-up">
+        <p class="headingText highlightedText">About me</p>
+        <p class="explanation">
+          I'm a highly skilled web developer and also a computer science student
+          with a passion for creating amazing and engaging web applications. I
+          am currently studying bachelor in computer science and information
+          technology from Tribhuvan University of Nepal. I am highly skilled in
+          working with MERN(MongoDB, Express Js, React Js, Node Js) stack
+          applications and also version control tools like git & github.
+        </p>
+        <p class="explanation">
+          I am always looking for new challenges and opportunities to expand my
+          skill set. I am passionate about creating innovative and effective web
+          solutions that make a fulfillment in my client's demand.
+        </p>
+      </div>
+    </section>
+    <section class="mySkills">
+      <div class="mySkillsTitle">
+        <p class="highlightedText">My skills:</p>
+      </div>
+      <div class="skills" data-aos="fade-up">
+        <ul>
+          <li><i class="bx bxl-html5"></i>HTML</li>
+          <li><i class="bx bxl-css3"></i>CSS</li>
+          <li><i class="bx bxl-sass"></i>SASS</li>
+          <li><i class="bx bxl-tailwind-css"></i>Tailwind</li>
+          <li><i class="bx bxl-javascript"></i>JavaScript</li>
+          <li><i class="bx bxl-react"></i>React Js</li>
+          <li><i class="bx bxl-nodejs"></i>Node Js</li>
+          <li><i class="bx bxl-mongodb"></i>MongoDB</li>
+          <li><i class="bx bxl-git"></i>Git</li>
+        </ul>
+      </div>
+    </section>
+    <section class="projects" id="projects">
+      <div class="projectsTitle">
+        <p class="highlightedText">Projects:</p>
+      </div>
+      <div class="headingText">
+        My <span class="primaryColor highlightedText">latest</span>
+        <br />awesome
+        <span class="transparentText highlightedText">projects</span>
+      </div>
+      <div class="allProjects" data-aos="fade-up">
+        <div class="project">
+          <div class="projectName">MERN stack Job Portal</div>
+          <div class="projectLink">
+            <a href="https://jobxnepal.vercel.app" target="_blank"
+              >Demo
+              <i class="bx bxs-right-arrow"></i>
+            </a>
+          </div>
+        </div>
+        <div class="project">
+          <div class="projectName">Foodee- Food delivery</div>
+          <div class="projectLink">
+            <a href="https://foodee-prasanpoudel.vercel.app" target="_blank"
+              >Demo
+              <i class="bx bxs-right-arrow"></i>
+            </a>
+          </div>
+        </div>
+        <div class="project">
+          <div class="projectName">Client's Portfolio</div>
+          <div class="projectLink">
+            <a
+              href="https://prasanpoudel.github.io/Client_Portfolio-Madhav/"
+              target="_blank"
+              >Demo
+              <i class="bx bxs-right-arrow"></i>
+            </a>
+          </div>
+        </div>
+        <div class="project">
+          <div class="projectName">Budget Application</div>
+          <div class="projectLink">
+            <a
+              href="https://prasanpoudel.github.io/Basic_Javascript-Projects/Budget%20App/"
+              target="_blank"
+              >Demo
+              <i class="bx bxs-right-arrow"></i>
+            </a>
+          </div>
+        </div>
+        <div class="project">
+          <div class="projectName">Todo App</div>
+          <div class="projectLink">
+            <a href="https://prasanpoudel.github.io/TodoApp/" target="_blank"
+              >Demo
+              <i class="bx bxs-right-arrow"></i>
+            </a>
+          </div>
+        </div>
+        <div class="project">
+          <div class="projectName">Password Generator</div>
+          <div class="projectLink">
+            <a
+              href="https://prasanpoudel.github.io/Basic_Javascript-Projects/Password%20Generator/"
+              target="_blank"
+              >Demo
+              <i class="bx bxs-right-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials" data-aos="fade-up">
+      <p class="testimonialsTitle highlightedText">Testimonials:</p>
+      <div class="headingText">
+        What <span class="primaryColor highlightedText">my clients</span> have
+        <br />
+        to say <span class="transparentText highlightedText">about me</span>
+      </div>
+      <div class="clientTestimonials">
+        <div class="clientTestimonial">
+          <div class="clientImg">
+            <img src="./images/client1.png" alt="" />
+          </div>
+          <div class="clientTestimonialComment">
+            <div class="quote">
+              <i class="bx bxs-quote-alt-left"></i>
+            </div>
+            <div class="comment">
+              "Outstanding work! My experience with this web developer was
+              fantastic. He delivered a visually appealing and user-friendly
+              website that exceeded my expectations. Highly recommended."
+            </div>
+            <div class="client">
+              <p class="clientName">Madhav Acharya</p>
+              <p class="clientPost">UI/UX Designer, Yoddhalab</p>
+            </div>
+          </div>
+        </div>
+        <div class="clientTestimonial">
+          <div class="clientImg">
+            <img src="./images/client2.png" alt="" />
+          </div>
+          <div class="clientTestimonialComment">
+            <div class="quote">
+              <i class="bx bxs-quote-alt-left"></i>
+            </div>
+            <div class="comment">
+              "Exceptional web development skills! The website he created for my
+              business not only looks stunning but also functions seamlessly. A
+              true professional in the field. Also his behaviour with the client
+              is very good."
+            </div>
+            <div class="client">
+              <p class="clientName">Aditya Sharma</p>
+              <p class="clientPost">Graphic Designer, Freelancer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <h1 class="primaryColor highlightedText">
+        Prasan
+        <span class="transparentText highlightedText"> Poudel</span>
+      </h1>
+      <ul>
+        <li>
+          <a href="https://www.facebook.com/prasan.poudel.77" target="_blank"
+            ><i class="bx bxl-facebook-circle"></i
+          ></a>
+          <a href="mailto:prasanpoudel501.gmail.com"
+            ><i class="bx bxl-gmail"></i
+          ></a>
+          <a href="https://github.com/PrasanPoudel"
+            ><i class="bx bxl-github"></i
+          ></a>
+        </li>
       </ul>
-    </div>
-    <button id="darkModeBtn" class='bx bx-moon' onclick="darkModeToggle()"></button>
-    <div id="menuBtn" class="bx bx-menu-alt-right"></div> 
-  </header>
-  <section class="hero" id="hero">
-    <div class="heroText" data-aos="fade-up" >
-<p class="greet">
-  <img src="./images/hello.png" alt="">, I'm
-</p>
-<h1 class="primaryColor highlightedText">
-  Prasan
-<span class="transparentText highlightedText">
-Poudel</span></h1>
-<p class="typewriter">
-</p>
-<div class="mySocials">
-<ul>
-  <li>
-    <a href="https://facebook.com/prasan.poudel.77" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
-    <a href="#"><i class='bx bxl-linkedin-square' ></i></a>
-    <a href="mailto:prasanpoudel501.gmail.com" target="_blank"><i class='bx bxl-gmail' ></i></a>
-    <a href="https://github.com/PrasanPoudel" target="_blank"><i class='bx bxl-github' ></i></a>
-  </li>
-</ul>
-</div>
-</div>
-<div class="heroImg">
-</div>
-</section>
-
-<section class="about" id="about">
-  <div class="about-Box1">
-    <img src="./images/icon.png" alt=""/>
-  </div>
-  <div class="about-Box2" data-aos="fade-up" >
-    <p class=" headingText highlightedText">
-    About me
-    </p>
-    <p class="explanation">
-      I'm a highly skilled web developer and also a computer science student with a passion for creating amazing and engaging web applications. I am currently studying bachelor in computer science and information technology from Tribhuvan University of Nepal. I am highly skilled in working with MERN(MongoDB, Express Js, React Js, Node Js) stack applications and also version control tools like git & github.
-    </p>
-    <p class="explanation"> I am always looking for new challenges and opportunities to expand my skill set. I am passionate about creating innovative and effective web solutions that make a fulfillment in my client's demand.
-    </p>
-  </div>
-</section>
-<section class="mySkills">
-  <div class="mySkillsTitle">
-    <p class="highlightedText">My skills:</p>
-  </div>
-  <div class="skills" data-aos="fade-down" >
-    <ul>
-      <li><i class='bx bxl-html5'></i>HTML</li>
-      <li><i class='bx bxl-css3'></i>CSS</li>
-        <li><i class='bx bxl-sass' ></i>SASS</li>
-        <li><i class='bx bxl-tailwind-css' ></i>Tailwind</li>
-        <li><i class='bx bxl-javascript' ></i>JavaScript</li>
-        <li><i class='bx bxl-react'></i>React Js</li>
-       <li><i class='bx bxl-nodejs'></i>Node Js</li>
-        <li><i class='bx bxl-mongodb' ></i>MongoDB</li>
-        <li><i class='bx bxl-git'></i>Git</li>
-
-      </ul>
-    </div>
-  </section>
-<section class="projects" id="projects">
-<div class="projectsTitle">
-  <p class="highlightedText">Projects:</p>
-</div>
-<div class="headingText">
-  My <span class="primaryColor highlightedText">latest</span> <br/>awesome
-<span class="transparentText highlightedText">projects</span>
-</div>
-<div class="allProjects" data-aos="fade-up">
-  <div class="project">
-    <div class="projectName">Foodee- Food delivery</div>
-    <div class="projectLink">
-        <button>
-          <a href="https://foodee-prasanpoudel.vercel.app" target="_blank">Demo
-            <i class='bx bxs-right-arrow'></i>
-          </a>
-        </button>
-      </div>
-  </div>
-  <div class="project">
-      <div class="projectName">Client's Portfolio</div>
-      <div class="projectLink">
-        <button>
-          <a href="https://prasanpoudel.github.io/Client_Portfolio-Madhav/" target="_blank">Demo
-            <i class='bx bxs-right-arrow'></i>
-            </a>
-        </button>
-      </div>
-  </div>
-  <div class="project">
-      <div class="projectName">Budget Application</div>
-      <div class="projectLink">
-        <button>
-          <a href="https://prasanpoudel.github.io/Basic_Javascript-Projects/Budget%20App/" target="_blank">Demo
-            <i class='bx bxs-right-arrow'></i>
-            </a>
-        </button>
-      </div>
-  </div>
-  <div class="project">
-      <div class="projectName">Password Generator</div>
-      <div class="projectLink">
-        <button>
-          <a href="https://prasanpoudel.github.io/Basic_Javascript-Projects/Password%20Generator/" target="_blank">Demo
-            <i class='bx bxs-right-arrow'></i>
-            </a>
-        </button>
-      </div>
-  </div>
-</div>
-</section>
-
-  <section class="testimonials" data-aos="fade-up" >
-    <p class="testimonialsTitle highlightedText">Testimonials:</p>
-    <div class="headingText">
-      What <span class="primaryColor highlightedText">my clients</span> have <br/>
-      to say <span class="transparentText highlightedText">about me</span>
-    </div>
-    <div class="clientTestimonials">
-      <div class="clientTestimonial">
-        <div class="clientImg">
-  <img src="./images/client1.png" alt="">
-        </div>
-        <div class="clientTestimonialComment">
-          <div class="quote">
-            <i class='bx bxs-quote-alt-left'></i>
-          </div>
-          <div class="comment">
-            "Outstanding work! My experience with this web developer was fantastic. He delivered a visually appealing and user-friendly website that exceeded my expectations. Highly recommended."
-          </div>
-          <div class="client">
-            <p class="clientName">
-              Madhav Acharya
-            </p>
-            <p class="clientPost">
-              UI/UX Designer, Yoddhalab
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="clientTestimonial">
-        <div class="clientImg">
-  <img src="./images/client2.png" alt="">
-        </div>
-        <div class="clientTestimonialComment">
-          <div class="quote">
-            <i class='bx bxs-quote-alt-left'></i>
-          </div>
-          <div class="comment">
-            "Exceptional web development skills! The website he created for my business not only looks stunning but also functions seamlessly. A true professional in the field. Also his behaviour with the client is very good."
-          </div>
-          <div class="client">
-            <p class="clientName">
-              Aditya Sharma
-            </p>
-            <p class="clientPost">
-              Graphic Designer, Freelancer
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-<footer>
-  <h1 class="primaryColor highlightedText">
-    Prasan
-  <span class="transparentText highlightedText">
-  Poudel</span></h1>
-    <ul>
-      <li>
-        <a href="https://www.facebook.com/prasan.poudel.77" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
-        <a href="mailto:prasanpoudel501.gmail.com"><i class='bx bxl-gmail' ></i></a>
-        <a href="https://github.com/PrasanPoudel"><i class='bx bxl-github' ></i></a>
-      </li>
-    </ul>
-  <p class="copyright">Copyright &copy;2024- Prasan Poudel. All rights reserved.</p>
-</footer>
-<script src="./script.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-</body>
-<script> 
-  AOS.init(
-    {
-      duration: 750
-    }
-    );
-    </script>
+      <p class="copyright">
+        Copyright &copy;2024- Prasan Poudel. All rights reserved.
+      </p>
+    </footer>
+    <script src="./script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </body>
+  <script>
+    AOS.init({
+      duration: 750,
+    });
+  </script>
 </html>
